@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700")
+
+$pri-color: hsl(0, 0%, 97%)
+$sec-color: hsl(60, 20%, 35%)
+$pri-font: Lora, sans-serif
+
+html,
+body
+  margin: 0
+  padding: 0
+  overflow-x: hidden
+  box-sizing: border-box
+  font-family: $pri-font
+
+#navbar
+  overflow-y: scroll
+  position: fixed
+  top: 0
+  left: 0
+  background-color: $pri-color
+  width: 250px
+  height: 100%
+  display: block
+  margin: auto
+  
+  
+h1
+  margin-left: 70px
+  margin-top: 40px
+
+.onehead
+  margin-bottom: 20px
+  margin-left: 75px
+  
+.ruler
+  width: 220px
+  margin-top: -8px
+  
+.lists
+  list-style: none
+
+.nav-link
+  text-decoration: none
+  color: black
+  
+.nav-link:hover
+  text-decoration: underline
+  color: hsl(240, 100%, 30%)
+
+.nav-link
+  cursor: pointer
+  font-size: 20px
+  list-style: none
+  margin: 30px
+  line-height: 68px
+
+#title
+  width: 330px
+  color: $sec-color
+  margin-left: 580px
+  
+#main-doc
+  font-family: $pri-font
+ 
+  
+.main-section
+  margin-left: 260px
+  margin-top: 80px 
+ 
+h2
+  color: $sec-color
+  
+@media screen and (max-width: 1272px) 
+  #title
+    margin-left: 252px
+    text-decoration: underline
+    
+@media screen and (max-width: 950px)
+  #navbar
+    width: 190px
+    
+  h1,
+  .onehead
+    margin-left: 43px
+    
+  .nav-link
+    margin-left: 0
+    font-size: 15px
+   
+  .main-section
+    margin-left: 200px
+    
